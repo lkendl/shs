@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Class Period Display</title>
-  <meta http-equiv="refresh" content="60; url=https://www.appsheet.com/start/a2a79793-8937-49c9-a051-87bff3e82be6">
+  <script>
+    // Load AppSheet app initially
+    function launchApp() {
+      window.location.href = "https://www.appsheet.com/start/a2a79793-8937-49c9-a051-87bff3e82be6";
+    }
+
+    // Set initial redirect
+    setTimeout(launchApp, 100);
+
+    // Repeat every 60 seconds
+    setInterval(launchApp, 60000);
+  </script>
   <style>
     body {
       font-family: sans-serif;
@@ -14,6 +25,6 @@
 </head>
 <body>
   <h2>Launching AppSheet Class Display...</h2>
-  <p>This screen will auto-refresh every 60 seconds.</p>
+  <p>The app will refresh every 60 seconds.</p>
 </body>
 </html>
