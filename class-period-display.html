@@ -1,7 +1,18 @@
 <!DOCTYPE html>
-<script>
-  window.location.href = "https://www.appsheet.com/start/a2a79793-8937-49c9-a051-87bff3e82be6";
-  setInterval(function() {
-    window.location.href = "https://www.appsheet.com/start/a2a79793-8937-49c9-a051-87bff3e82be6";
-  }, 60000); // refresh every 60 seconds
-</script>
+<html>
+  <head>
+    <title>Class Period Display</title>
+    <meta charset="UTF-8" />
+    <script>
+      function redirectToAppSheet() {
+        window.location.href = "https://www.appsheet.com/start/a2a79793-8937-49c9-a051-87bff3e82be6";
+      }
+      redirectToAppSheet(); // Open the app
+      setInterval(redirectToAppSheet, 60000); // Reload every 60 seconds
+    </script>
+  </head>
+  <body style="font-family:sans-serif; text-align:center; margin-top:20%;">
+    <h2>Loading Class Period Display...</h2>
+    <p>This screen will refresh every 60 seconds.</p>
+  </body>
+</html>
