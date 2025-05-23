@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Auto-Redirect to AppSheet</title>
-    <script>
-      // Redirect to AppSheet immediately and again every 60 seconds
-      function redirectToAppSheet() {
-        window.location.href = "https://www.appsheet.com/start/a2a79793-8937-49c9-a051-87bff3e82be6";
-      }
-      redirectToAppSheet(); // Initial load
-      setInterval(redirectToAppSheet, 60000); // Reload every 60 seconds
-    </script>
+    <meta http-equiv="refresh" content="60">
+    <title>Class Period Display</title>
   </head>
-  <body style="font-family:sans-serif; text-align:center; margin-top:20%;">
-    <h2>Launching Class Period Display...</h2>
-    <p>The screen will refresh every 60 seconds.</p>
+  <body style="margin:0;padding:0;">
+    <iframe 
+      src="https://www.appsheet.com/start/a2a79793-8937-49c9-a051-87bff3e82be6" 
+      width="100%" 
+      height="100%" 
+      style="border:none;">
+    </iframe>
   </body>
 </html>
