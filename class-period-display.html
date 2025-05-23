@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Class Period Display</title>
-    <meta charset="UTF-8" />
-    <script>
-      function redirectToAppSheet() {
-        window.location.href = "https://www.appsheet.com/start/a2a79793-8937-49c9-a051-87bff3e82be6";
-      }
-      redirectToAppSheet(); // Open the app
-      setInterval(redirectToAppSheet, 60000); // Reload every 60 seconds
-    </script>
-  </head>
-  <body style="font-family:sans-serif; text-align:center; margin-top:20%;">
-    <h2>Loading Class Period Display...</h2>
-    <p>This screen will refresh every 60 seconds.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Class Period Display</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    function redirectToAppSheet() {
+      window.location.href = "https://www.appsheet.com/start/a2a79793-8937-49c9-a051-87bff3e82be6";
+    }
+    setTimeout(redirectToAppSheet, 100); // redirect quickly
+    setInterval(redirectToAppSheet, 60000); // reload every 60s
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 20%;
+    }
+  </style>
+</head>
+<body>
+  <h2>Launching AppSheet Class Display...</h2>
+  <p>This screen will auto-refresh every 60 seconds.</p>
+</body>
 </html>
